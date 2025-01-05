@@ -11,7 +11,11 @@ const Search = () => {
             <Icon id="back" />
           </button>
         </div>
-        <input className="search" placeholder="Search..." />
+        <input
+          className="search"
+          placeholder="Search..."
+          style={{ color: "white" }}
+        />
       </div>
       <div className="chat-sidebar__search-results">
         <p> Search for messages</p>
