@@ -28,6 +28,11 @@ async function connectToMongoDB() {
 // Call the connection function
 connectToMongoDB();
 
+// Root route to display a welcome message
+app.get("/", (req, res) => {
+  res.send("Hello, this is Bn server");
+});
+
 // API to fetch all messages from the 'Bn' collection
 app.get("/api/messages", async (req, res) => {
   try {
