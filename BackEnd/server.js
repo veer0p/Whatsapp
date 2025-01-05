@@ -16,7 +16,9 @@ let db;
 // Connect to MongoDB
 async function connectToMongoDB() {
   try {
-    const client = await MongoClient.connect(MONGO_URI);
+    const client = await MongoClient.connect(
+      "mongodb+srv://veer:%40Veer.idk@whatsapp.3bc95.mongodb.net/"
+    );
     db = client.db(DATABASE_NAME);
     console.log("Connected to MongoDB");
   } catch (error) {
